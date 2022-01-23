@@ -44,25 +44,25 @@ class PositionalEncoding(nn.Module):
         self.d_model = d_model
 
         self.max_len = max_len
-        print("d_model", d_model)
+        # print("d_model", d_model)
         pos_enc = torch.zeros(max_len, d_model)
-        print("pe initial size", pos_enc.size())
+        # print("pe initial size", pos_enc.size())
         pos = torch.arange(0, max_len, dtype=torch.float).unsqueeze(1) #.view(-1,1)
-        print("pos initial size", pos.size())
+        # print("pos initial size", pos.size())
         div_term = torch.arange(0, d_model, 2).float() * -(math.log(10000)/d_model)
-        print("div term  size", div_term.size())
+        # print("div term  size", div_term.size())
         
         pos_enc[:,0::2] = torch.sin(torch.as_tensor(pos.numpy() * div_term.unsqueeze(0).numpy()))
         pos_enc[:,1::2] = torch.cos(torch.as_tensor(pos.numpy() * div_term.unsqueeze(0).numpy()))
         
         pos_enc = pos_enc.unsqueeze(0)
-        print("final initial size", pos_enc.size())
+        # print("final initial size", pos_enc.size())
         self.register_buffer('pos_enc', pos_enc)
         
     def forward(self, x):
         with torch.no_grad():
             print(x.size(1))
-            print("smaller size", self.pos_enc[:,:x.size(1)].size())
+            # print("smaller size", self.pos_enc[:,:x.size(1)].size())
             x = x+self.pos_enc[:,:x.size(1)]
         return x
         
