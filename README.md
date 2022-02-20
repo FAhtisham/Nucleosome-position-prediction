@@ -30,10 +30,10 @@ NucBoost extracts 9 different feature vectors from a DNA sequence.
 - GC Content
 - k Tuple
 - k Gap 
-- Pseudo K Nucleotied Composition 
-- zCurve
+- Pseudo K Nucleotide Composition 
+- Z Curve
 - GC Content 
-- atgcRatio 
+- ATCG Ratio 
 - Mono Mono 
 - Mono Di 
 - Mono Tri 
