@@ -5,22 +5,22 @@ This repository contain the codes for Numcleome position prediction.
 
 ## Dataset
 
-G1
+-G1
 
--C. elegans
--D. melanogaster
--H. sapiens
+  -C. elegans
+  -D. melanogaster
+  -H. sapiens
 
-G2
+-G2
 
--HM-LC (Long chr)
--DM-LC (Long chr)
--YS-WG (Whole Genome)
--HM-PM (Promoter)
--DM-PM (Promoter)
--YS-PM (Promoter)
--HM-5U (5UTR)
--DM-5U (5UTR)
+  -HM-LC (Long chr)
+  -DM-LC (Long chr)
+  -YS-WG (Whole Genome)
+  -HM-PM (Promoter)
+  -DM-PM (Promoter)
+  -YS-PM (Promoter)
+  -HM-5U (5UTR)
+  -DM-5U (5UTR)
 
 
 ## Feature generation
