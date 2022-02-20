@@ -27,7 +27,7 @@ This repository contain the codes for Numcleome position prediction.
 
 NucBoost extracts 9 different feature vectors from a DNA sequence.
 
-- GC Content,
+- GC Content
 - k Tuple
 - k Gap 
 - Pseudo K Nucleotied Composition 
