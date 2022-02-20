@@ -1,4 +1,4 @@
-# Nucleosome-positoin-prediction
+# NucBoost (Nucleosome-Positoin-Prediction-Via-Boosting)
 
 
 This repository contain the codes for Numcleome position prediction.
